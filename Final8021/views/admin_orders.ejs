@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Orders</title>
+</head>
+<body>
+    <h1>All Orders</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Pizza</th>
+                <th>Pasta</th>
+                <th>Wings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% orders.forEach(order => { %>
+                <tr>
+                    <td><%= order.name %></td>
+                    <td><%= order.phone %></td>
+                    <td><%= order.pizza %></td>
+                    <td><%= order.pasta %></td>
+                    <td><%= order.wings %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>

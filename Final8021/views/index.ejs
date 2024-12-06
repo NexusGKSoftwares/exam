@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dee's Restaurant - Place Your Order</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Welcome to Dee's Restaurant</h1>
+
+        <!-- Menu Section -->
+        <section class="menu-section">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-item">
+                <strong>Pizza:</strong> $15.99 each
+            </div>
+            <div class="menu-item">
+                <strong>Pasta:</strong> $20.99 each
+            </div>
+            <div class="menu-item">
+                <strong>Wings:</strong> $10.49 each
+            </div>
+        </section>
+
+        <!-- Order Form Section -->
+        <section class="order-form-section">
+            <h2 class="section-title">Place Your Order</h2>
+            <form action="/order" method="POST" class="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="input-field" placeholder="Enter your name" required><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" class="input-field" placeholder="Enter your phone number" required><br><br>
+
+                <label for="pizza">Pizza Quantity:</label>
+                <input type="number" id="pizza" name="pizza" class="input-field" placeholder="Quantity" min="0"><br><br>
+
+                <label for="pasta">Pasta Quantity:</label>
+                <input type="number" id="pasta" name="pasta" class="input-field" placeholder="Quantity" min="0"><br><br>
+
+                <label for="wings">Wings Quantity:</label>
+                <input type="number" id="wings" name="wings" class="input-field" placeholder="Quantity" min="0"><br><br>
+
+                <button type="submit" class="submit-button">Place Order</button>
+            </form>
+        </section>
+
+        <% if (errors && errors.length > 0) { %>
+            <div class="errors">
+                <ul>
+                    <% errors.forEach(error => { %>
+                        <li><%= error.msg %></li>
+                    <% }) %>
+                </ul>
+            </div>
+        <% } %>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  color: #2d3e50;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #2d3e50;
+  margin-bottom: 10px;
+}
+
+.menu-section, .order-form-section {
+  margin-bottom: 30px;
+}
+
+.menu-item {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2d3e50;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #4a5d73;
+}
+
+.errors {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  border-radius: 5px;
+}
+
+.error-item {
+  font-size: 1rem;
+  margin: 5px 0;
+}
